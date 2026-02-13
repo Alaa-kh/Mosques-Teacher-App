@@ -3,6 +3,7 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:mosques_teacher/src/core/hive/user_box.dart';
 import 'package:mosques_teacher/src/core/widgets/app_snack_bar.dart';
 import 'package:mosques_teacher/src/features/auth/login/views/login_page.dart';
+import 'package:mosques_teacher/src/features/auth/reset_password/views/reset_password_page.dart';
 import '../core/storage/token_storage.dart';
 
 class AppRouter {
@@ -19,12 +20,12 @@ class AppRouter {
         pageBuilder: (_, __) => const NoTransitionPage(child: LoginPage()),
       ),
 
-      // GoRoute(
-      //   path: '/reset-password',
-      //   name: 'reset-password',
-      //   pageBuilder: (_, __) =>
-      //       const NoTransitionPage(child: ResetPasswordPage()),
-      // ),
+      GoRoute(
+        path: '/reset-password',
+        name: 'reset-password',
+        pageBuilder: (_, __) =>
+            const NoTransitionPage(child: ResetPasswordPage()),
+      ),
     
   
     ],
