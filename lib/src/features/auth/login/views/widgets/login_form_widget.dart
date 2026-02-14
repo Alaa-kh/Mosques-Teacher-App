@@ -56,7 +56,6 @@ class LoginFormWidget extends StatelessWidget {
             icon: SvgPicture.asset(AppIcons.eye),
           ),
         ).fadeUp(),
-        const SizedBox(height: 13),
         Align(
           alignment: Alignment.centerRight,
           child: GestureDetector(
@@ -66,8 +65,8 @@ class LoginFormWidget extends StatelessWidget {
               style: TextStyle(color: AppColors.maincClr),
             ).fadeUp(),
           ),
-        ),
-        const SizedBox(height: 13),
+        ).fadeUp(),
+        const SizedBox(height: 30),
         AppButton(
           title: 'تسجيل الدخول',
           // title: state.loading ? '...' : 'تسجيل الدخول',

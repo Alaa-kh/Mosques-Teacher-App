@@ -17,10 +17,11 @@ class ResetPasswordPage extends StatelessWidget {
           onPressed: () {
             context.pop();
           },
-          icon: Icon(Icons.arrow_back,color: AppColors.maincClr,),
+          icon: Icon(Icons.arrow_back, color: AppColors.maincClr),
         ),
       ),
       backgroundColor: Colors.white,
+
       // body: BlocConsumer<ResetPasswordCubit, ResetPasswordState>(
       //   listenWhen: (previous, current) => previous.loading && !current.loading,
       //   listener: (context, state) {
@@ -35,11 +36,10 @@ class ResetPasswordPage extends StatelessWidget {
       //     }
       //   },
       //   builder: (context, state) =>
-        
-       body:   SingleChildScrollView(
-          padding: const EdgeInsets.all(20),
-          child: ResetPasswordFormWidget(),
-        ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: ResetPasswordFormWidget(),
+      ),
       // ),
     );
   }

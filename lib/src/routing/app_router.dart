@@ -26,38 +26,36 @@ class AppRouter {
         pageBuilder: (_, __) =>
             const NoTransitionPage(child: ResetPasswordPage()),
       ),
-    
-  
     ],
-//     redirect: (context, state) {
-//   if (!Hive.isBoxOpen('user')) {
-//     return '/login';
-//   }
 
-//   final user = Hive.box('user').get('user');
-//   final logged = user != null;
+    //     redirect: (context, state) {
+    //   if (!Hive.isBoxOpen('user')) {
+    //     return '/login';
+    //   }
 
-//   final location = state.matchedLocation;
+    //   final user = Hive.box('user').get('user');
+    //   final logged = user != null;
 
-//   const publicRoutes = <String>{
-//     '/login',
-//     '/reset-password',
-//     '/verify',
-//     '/new-password',
-//   };
+    //   final location = state.matchedLocation;
 
-//   final loggingIn = location == '/login';
+    //   const publicRoutes = <String>{
+    //     '/login',
+    //     '/reset-password',
+    //     '/verify',
+    //     '/new-password',
+    //   };
 
-//   if (!logged && !publicRoutes.contains(location)) {
-//     return '/login';
-//   }
+    //   final loggingIn = location == '/login';
 
-//   if (logged && loggingIn) {
-//     return '/';
-//   }
+    //   if (!logged && !publicRoutes.contains(location)) {
+    //     return '/login';
+    //   }
 
-//   return null;
-// },
+    //   if (logged && loggingIn) {
+    //     return '/';
+    //   }
 
+    //   return null;
+    // },
   );
 }

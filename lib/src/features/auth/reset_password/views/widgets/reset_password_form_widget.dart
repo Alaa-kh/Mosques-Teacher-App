@@ -6,7 +6,7 @@ import 'package:mosques_teacher/src/core/widgets/app_button.dart';
 import 'package:mosques_teacher/src/core/widgets/app_text_field.dart';
 
 class ResetPasswordFormWidget extends StatelessWidget {
-  const ResetPasswordFormWidget({super.key, });
+  const ResetPasswordFormWidget({super.key});
   // final ResetPasswordState state;
   @override
   Widget build(BuildContext context) {
@@ -27,13 +27,15 @@ class ResetPasswordFormWidget extends StatelessWidget {
           'أدخل الإيميل لإعادة تعيين كلمة المرور الخاصة بك.',
           style: TextStyle(fontSize: 16, color: AppColors.dark),
         ).fadeUp(),
-       const SizedBox(height: 30),  AppTextField(
+        const SizedBox(height: 30),
+        AppTextField(
           hintTextDirection: TextDirection.rtl,
           label: 'البريد الإلكتروني',
+
           // controller: context.read<LoginCubit>().pass,
           // obscure: state.hidePassword,
-         
         ).fadeUp(),
+        const SizedBox(height: 30),
         AppButton(
           title: 'حفظ',
           // loading: state.loading,
@@ -42,7 +44,7 @@ class ResetPasswordFormWidget extends StatelessWidget {
             // context.read<ResetPasswordCubit>().resetPassword(
             //   context,
             //   context.read<ResetPasswordCubit>().phoneCtrl.text,
-            //  
+            //
             // );
           },
         ).scaleIn(),

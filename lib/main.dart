@@ -1,5 +1,3 @@
-
-
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -8,13 +6,14 @@ import 'package:mosques_teacher/src/app/app.dart';
 import 'package:mosques_teacher/src/core/hive/hive_setup.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized(); 
+  WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   await HiveSetup.registerAdaptersAndOpenBoxes();
 
   HttpOverrides.global = MyHttpOverrides();
   runApp(const MosquesTeacherApp());
 }
+
 class MyHttpOverrides extends HttpOverrides {
   @override
   HttpClient createHttpClient(SecurityContext? context) {
